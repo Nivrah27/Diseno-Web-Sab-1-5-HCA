@@ -1,0 +1,790 @@
+
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.548);
+}
+
+.logo-text {
+  background: 50% 100%/50% 50% no-repeat radial-gradient(ellipse at bottom, #0056b3, transparent, transparent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 2rem; /* Ajusta el tamaño según tus necesidades */
+  font-weight: bold;
+  animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
+}
+
+.logo-text span {
+  color: #00BFFF;
+}
+
+@keyframes reveal {
+  80% {
+      letter-spacing: 4px;
+  }
+  100% {
+      background-size: 300% 300%;
+  }
+}
+
+@keyframes glow {
+  40% {
+      text-shadow: 0 0 8px #00BFFF;
+  }
+}
+
+/* Navbar Styles */
+.navbar-nav .nav-link {
+  color: #333641;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #00BFFF;
+}
+
+.dropdown-menu {
+  background-color: #00BFFF;
+}
+
+.dropdown-menu a {
+  color: #fff;
+}
+
+/* Mobile Responsive */
+@media only screen and (max-width: 576px) {
+  .navbar-nav {
+      background-color: #00BFFF;
+      position: absolute;
+      width: 100%;
+      top: 100%;
+      left: 0;
+      z-index: 1;
+      display: none;
+  }
+
+  .navbar-nav .nav-item {
+      border-bottom: 1px solid #fff;
+  }
+
+  .navbar-nav .dropdown-menu {
+      background-color: #00BFFF;
+  }
+
+  .navbar-toggler {
+      display: block;
+  }
+}
+
+.logo-container {
+  height: 100%;
+  overflow: hidden;
+  background-color: #ffffff; /* Fondo blanco para el logo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1; /* Para que ocupe el espacio restante */
+}
+
+.logo-img {
+  max-width: 100px; /* Tamaño máximo para el logo */
+  height: auto; /* Altura automática para mantener la proporción */
+}
+
+.video-section1 {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 68vh; /* Ajusta este valor según tus necesidades */
+}
+
+.video-container1 {
+  position: relative;
+  width: 100%;
+  padding-bottom: 40%; /* Proporción ajustada para reducir la altura */
+  background-color: #ffffff;
+}
+
+.video-container1 video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.video-content1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 3;
+}
+
+.video-content1 h2 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.video-content1 p {
+  color: #ffffff;
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.video-content1 .btn {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.5s;
+}
+
+.video-content1 .btn:hover {
+  background-color: #00BFFF;
+}
+
+.mission-section {
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+.mission-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.mission-section .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mission-section .card {
+  perspective: 1000px;
+}
+
+.card-inner {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+}
+
+.mission-section .card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-inner .front,
+.card-inner .back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card-inner .front {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #fff; /* Color de fondo blanco */
+  z-index: 2;
+}
+
+.card-inner .back {
+  background: #00BFFF;
+  color: #fff; /* Texto en blanco */
+  transform: rotateY(180deg);
+}
+
+.card-inner h1 {
+  font-size: 2em;
+}
+
+.card-inner p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+/* Estilos para el banner parallax */
+.parallax-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.parallax-bg {
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.parallax-content {
+  text-align: center;
+  z-index: 1;
+  color: #fff;
+  position: relative;
+    z-index: 2;
+}
+
+.parallax-content h2 {
+  font-size: 5em; /* Tamaño de la fuente */
+  font-weight: 700; /* Grosor de la fuente */
+  margin-bottom: 20px; /* Espacio inferior */
+  text-align: right; /* Alinear a la derecha */
+  margin-left: 1000px; /* Margen derecho */
+  color: #00BFFF; /* Color del texto */
+  text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5); /* Efecto de sombra 3D */
+  transform: translateY(-10px); /* Elevación del texto */
+}
+
+.parallax-content p {
+  font-size: 1.5em; /* Tamaño de la fuente */
+  text-align: right; /* Alinear a la derecha */
+  margin-left: 1000px; /* Margen derecho */
+  color: #ffffff; /* Color del texto */
+  max-width: 70%; /* Ancho máximo del párrafo */
+  margin-bottom: 30px; /* Espacio inferior */
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5); /* Efecto de sombra 3D */
+  transform: translateY(-5px); /* Elevación del texto */
+}
+
+.about-section {
+  background-image: url('../imagenes/fondoseccion.png');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 100px 0;
+}
+
+.about-content {
+  text-align: center;
+  position: relative;
+}
+
+.about-content h2 {
+  font-size: 5em;
+  font-weight: 700;
+  color: #00BFFF;
+  margin-bottom: 30px;
+  text-shadow: 3px 3px 10px rgba(0,0,0,0.5); /* Efecto 3D */
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-content p {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5); /* Efecto 3D */
+  max-width: 50%; /* Ajusta este valor según tu preferencia */
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; /* Texto justificado */
+}
+
+.spacer {
+  height: 50px;
+}
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #00BFFF;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 900px; 
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.service-boxes {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  border: #fff
+}
+
+.service-box {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid white; /* Agregar borde blanco */
+  border-radius: 10px; /* Añadir esquinas redondeadas */
+  transition: border-color 0.3s ease; /* Transición suave para el color del borde */
+  margin: 0 20px;
+  position: relative; /* Asegura que los pseudo-elementos estén posicionados correctamente */
+  background: 
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.034), transparent) bottom,
+    rgba(0, 0, 0, 0.411);
+  backdrop-filter: blur(5px);
+}
+
+.service-box:hover {
+  border-color: #00BFFF; /* Cambiar color del borde al pasar el cursor */
+}
+
+.service-box img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  position: relative; /* Ajusta la posición de la imagen para estar por encima del efecto */
+  z-index: 2;
+}
+
+.service-box h3 {
+  font-size: 1.2em;
+  color: white;
+  text-decoration: none;
+  position: relative; /* Ajusta la posición del texto para estar por encima del efecto */
+  z-index: 2; 
+}
+
+.service-box a {
+  text-decoration: none;
+  color: white;
+}
+
+.services-display {
+  margin: 0;
+  background-color: #fafafa;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.container-services {
+  height: 100vh;
+  width: 100%;
+  max-height: 600px;
+  max-width: 1600px;
+  min-height: 600px;
+  min-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+
+}
+
+.panel {
+  height: 270px;
+  width: 300px;
+  position: relative;
+}
+
+/* Hover Effects */
+.panel:hover .card {
+  filter: blur(1.5px);
+}
+
+.panel:hover .card1 {
+  background-size: 215% 135%;
+}
+
+.panel:hover .card2 {
+  background-size: 115% 115%;
+}
+
+.panel:hover .card3 {
+  background-size: 155% 115%;
+}
+
+.panel:hover .card4 {
+  background-size: 155% 115%;
+}
+
+.panel:hover .title {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.panel:hover .border {
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.panel:hover .slide {
+  bottom: 0px;
+}
+
+.panel:hover .ring:before,
+.panel:hover .ring:after {
+  transform: translateX(-50%) translateY(-50%) rotate(310deg);
+}
+
+/* Elements */
+.ring,
+.card,
+.border,
+.slide,
+.line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ring {
+  color: #fffbf1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 300px;
+}
+
+.service-card {
+  background: #f0ead6;
+  position: relative;
+  transition: all 1s;
+  height: 270px;
+  width: 300px;
+  border: 3px solid rgb(0, 183, 255);
+}
+
+.card1 {
+  background-image: url("https://assets-global.website-files.com/62d597b300f3e8bc76aff8db/63f911b8ad4dcf26c5408642_63ed4f203d77b2de334b5232_hvac.png");
+  background-repeat: no-repeat;
+  background-size: 200% 120%;
+}
+
+.card2 {
+  background-image: url("https://img.freepik.com/premium-photo/modern-hvac-systems-with-full-automation_212944-32494.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.card3 {
+  background-image: url("https://5.imimg.com/data5/SELLER/Default/2022/9/SU/VH/PU/110577919/electrical-wire-installation-service.jpg");
+  background-repeat: no-repeat;
+  background-size: 140% 100%;
+}
+
+.card4 {
+  background-image: url("https://cdn.yello.link/gpheating/files/gas-installation-480x480.jpg");
+  background-repeat: no-repeat;
+  background-size: 140% 100%;
+}
+
+.ring:before,
+.ring:after {
+  content: "";
+  padding: 0.7em 0.4em;
+  position: absolute;
+  left: 50%;
+  width: 115%;
+  top: 50%;
+  display: block;
+  border: 5px solid #00BFFF;
+  color: #00BFFF;
+  border-radius: 50%;
+  transition: transform 1s;
+  transform: translateX(-50%) translateY(-50%) rotate(50deg);
+}
+
+.ring:before {
+  border-color: rgb(15, 188, 231) rgb(15, 188, 231) rgba(0, 0, 0, 0)
+    rgba(0, 0, 0, 0);
+  z-index: -1;
+}
+
+.ring:after {
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgb(15, 188, 231)
+    rgb(15, 188, 231);
+}
+
+/* Text */
+#services {
+  text-align: center;
+  position: absolute;
+  font-family: "Playfair Display";
+  font-size: 30px;
+  font-weight: 700;
+  top: 0;
+}
+
+.para {
+  bottom: 0;
+  font-size: 20px;
+  padding: 20px;
+  margin: 0;
+  text-align: center;
+}
+
+/* Border */
+.border {
+  position: absolute;
+  border: 1px solid rgb(0, 97, 177);
+  height: 260px;
+  width: 290px;
+  transition: border 1s;
+  overflow: hidden;
+}
+
+/* Slide */
+.slide {
+  height: 260px;
+  width: 300px;
+  position: absolute;
+  border: 1px solid black;
+  bottom: -270px;
+  background: rgba(0, 0, 0, 0.5);
+  transition: bottom 1s;
+  flex-direction: column;
+}
+
+.team-section {
+  background-color: #f4f4f4;
+  padding: 50px 0;
+}
+
+.section-title-team {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.team-member:hover {
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.team-member {
+  flex: 0 0 calc(25% - 20px);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.team-member-img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.team-member-name {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.team-member-role {
+  color: #888;
+}
+
+#warehouse-video-section {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 80px 0; /* Aumentamos el padding para más altura */
+}
+
+.warehouse-section-title {
+  margin-bottom: 60px; /* Aumentamos el margen inferior */
+  color: #333;
+}
+
+.warehouse-video-wrapper {
+  position: relative;
+  width: 80%; /* Ajustamos la anchura */
+  margin: 0 auto; /* Centramos horizontalmente */
+  padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+  overflow: hidden;
+  height: 0; /* Inicialmente, la altura es 0 */
+  transition: height 0.5s ease; /* Transición suave para la altura */
+  cursor: pointer; /* Cursor de puntero para indicar que es clickeable */
+}
+
+.warehouse-video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Aumentamos el z-index para que esté por encima del overlay */
+}
+
+.warehouse-video-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Color oscuro para el overlay */
+  z-index: 2;
+  display: none;
+}
+
+.warehouse-video-wrapper.expanded {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+
+.scroll-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #00BFFF;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 9999;
+  display: none; /* inicialmente oculto */
+}
+
+.scroll-top-btn:hover {
+  background-color: #555;
+}
+
+
+
+/* Estilos específicos para el footer */
+footer {
+  font-family: 'Roboto', sans-serif;
+  background-color: #1f5a94;
+  color: #f1f1f1;
+  padding-top: 40px;
+  padding-right: 60px;
+}
+
+.quicklink{
+  color: #f1f1f1
+}
+
+
+
+@media (max-width: 767.98px) {
+  .container-footer {
+      max-width: 100%;
+  }
+  
+  .col-md-3 {
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-bottom: 20px;
+  }
+}
+
+/* Ajuste para Samsung Galaxy S8 */
+@media (max-width: 360px) {
+  footer h5 {
+      font-size: 1rem;
+  }
+  
+  footer p {
+      font-size: 0.8rem;
+  }
+  
+  footer .btn {
+      padding: 0.5rem 1rem;
+      font-size: 0.8rem;
+  }
+  
+  footer img {
+      width: 80px;
+  }
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Espacio entre íconos y texto de derechos reservados */
+}
+
+.social-icons a {
+  margin: 0 10px; /* Espacio entre íconos */
+  text-decoration: none;
+  color: #fff;
+  font-size: 2em;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #050801;
+}
+
+/* Texto de derechos reservados */
+.copyright {
+  text-align: center;
+  margin-top: 20px; /* Espacio entre íconos y texto de derechos reservados */
+  color: #777; /* Color de texto gris */
+}
