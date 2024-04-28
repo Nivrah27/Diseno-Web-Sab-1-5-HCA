@@ -1,0 +1,416 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.548);
+  }
+  
+  .logo-text {
+    background: 50% 100%/50% 50% no-repeat radial-gradient(ellipse at bottom, #0056b3, transparent, transparent);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 2rem; /* Ajusta el tamaño según tus necesidades */
+    font-weight: bold;
+    animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
+  }
+  
+  .logo-text span {
+    color: #00BFFF;
+  }
+  
+  @keyframes reveal {
+    80% {
+        letter-spacing: 4px;
+    }
+    100% {
+        background-size: 300% 300%;
+    }
+  }
+  
+  @keyframes glow {
+    40% {
+        text-shadow: 0 0 8px #00BFFF;
+    }
+  }
+  
+  /* Navbar Styles */
+  .navbar-nav .nav-link {
+    color: #333641;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #00BFFF;
+  }
+  
+  .dropdown-menu {
+    background-color: #00BFFF;
+  }
+  
+  .dropdown-menu a {
+    color: #fff;
+  }
+  
+  /* Mobile Responsive */
+  @media (max-width: 576px) {
+    .navbar-nav {
+        background-color: #00BFFF;
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        left: 0;
+        z-index: 1;
+        display: none;
+    }
+  
+    .navbar-nav .nav-item {
+        border-bottom: 1px solid #fff;
+    }
+  
+    .navbar-nav .dropdown-menu {
+        background-color: #00BFFF;
+    }
+  
+    .navbar-toggler {
+        display: block;
+    }
+}
+  
+.logo-container {
+height: 100%;
+overflow: hidden;
+background-color: #ffffff; /* Fondo blanco para el logo */
+display: flex;
+align-items: center;
+justify-content: center;
+flex-grow: 1; /* Para que ocupe el espacio restante */
+}
+
+.logo-img {
+max-width: 100px; /* Tamaño máximo para el logo */
+height: auto; /* Altura automática para mantener la proporción */
+}
+
+.hero-section {
+position: relative;
+width: 100%;
+overflow: hidden;
+background-color: #00BFFF;
+}
+
+.video-container {
+position: relative;
+width: 100%;
+height: 900px; 
+overflow: hidden;
+}
+
+.video-container iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+.service-boxes {
+display: flex;
+justify-content: space-around;
+position: absolute;
+bottom: 10%;
+left: 50%;
+transform: translateX(-50%);
+width: 80%;
+border: #fff
+}
+  
+.service-box {
+flex: 1;
+text-align: center;
+padding: 20px;
+border: 2px solid white; /* Agregar borde blanco */
+border-radius: 10px; /* Añadir esquinas redondeadas */
+transition: border-color 0.3s ease; /* Transición suave para el color del borde */
+margin: 0 20px;
+position: relative; /* Asegura que los pseudo-elementos estén posicionados correctamente */
+background: 
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.034), transparent) bottom,
+    rgba(0, 0, 0, 0.411);
+backdrop-filter: blur(5px);
+}
+
+.service-box:hover {
+border-color: #00BFFF; /* Cambiar color del borde al pasar el cursor */
+}
+
+.service-box img {
+width: 50px;
+height: 50px;
+margin-bottom: 10px;
+position: relative; /* Ajusta la posición de la imagen para estar por encima del efecto */
+z-index: 2;
+}
+
+.service-box h3 {
+font-size: 1.2em;
+color: white;
+text-decoration: none;
+position: relative; /* Ajusta la posición del texto para estar por encima del efecto */
+z-index: 2; 
+}
+
+.service-box a {
+text-decoration: none;
+color: white;
+}
+
+.services-display {
+margin: 0;
+background-color: #fafafa;
+display: flex;
+align-items: center;
+width: 100%;
+}
+
+@media (max-width: 768px) {
+    .service-boxes {
+        bottom: 5%; /* Ajustar la posición de los servicios en pantallas más pequeñas */
+        width: 90%; /* Ajustar el ancho de los servicios en pantallas más pequeñas */
+    }
+
+    .service-box {
+        padding: 10px; /* Ajustar el padding de los servicios en pantallas más pequeñas */
+        margin: 0 10px; /* Ajustar el margen de los servicios en pantallas más pequeñas */
+    }
+}
+
+hr.rounded {
+    border-top: 8px solid #00BFFF;
+    border-radius: 5px;
+}
+
+.servicesdescription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px; /* Ajustar el padding si es necesario */
+    box-sizing: border-box; /* Incluir el padding en el ancho total */
+}
+
+.servicebox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%; /* Ajustar el ancho de las cajas de servicio */
+    max-width: 1200px; /* Establecer un ancho máximo si es necesario */
+    margin-bottom: 50px; /* Ajustar el espacio entre las cajas */
+    border: 2px solid #00BFFF;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.servicebox:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos para las imágenes y el texto */
+.image-container-sb {
+    flex: 1;
+    padding: 10px;
+}
+
+.image-container-sb img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.text-container-servicebox {
+    flex: 1;
+    padding: 20px;
+    position: relative;
+}
+
+.text-container-servicebox h2 {
+    text-align: center;
+    color: #00BFFF;
+    margin-bottom: 15px;
+}
+
+.text-container-servicebox p {
+    text-align: justify;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.btn-request {
+    display: inline-block;
+    background-color: #00BFFF;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.btn-request:hover {
+    background-color: #0073e6;
+}
+
+
+@media (max-width: 768px) {
+    .servicebox {
+        width: 100%; /* Cambiar el ancho de las cajas al 100% en pantallas pequeñas */
+    }
+}
+
+/* Estilos para la sección de precios */
+#precios {
+    background-color: #f5f5f5;
+    padding: 60px 0;
+  }
+  
+  #precios .section-title h2 {
+    color: #333;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  #precios .section-title p {
+    color: #777;
+    margin-bottom: 30px;
+  }
+  
+  /* Estilos para la tabla */
+  #precios table {
+    width: 100%;
+    border-collapse: collapse;
+    border: #00BFFF;
+    
+  }
+  
+  #precios th, #precios td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #00BFFF;
+  }
+  
+  #precios th {
+    background-color: #00BFFF;
+  }
+  
+  #precios tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  #precios tbody tr:hover {
+    background-color: #ddd;
+  }
+  
+  @media (max-width: 768px) {
+    #precios table {
+      width: 100%;
+    }
+}
+
+.scroll-top-btn {
+position: fixed;
+bottom: 20px;
+right: 20px;
+width: 40px;
+height: 40px;
+background-color: #00BFFF;
+color: #fff;
+border: none;
+border-radius: 50%;
+font-size: 24px;
+cursor: pointer;
+z-index: 9999;
+display: none; /* inicialmente oculto */
+}
+
+.scroll-top-btn:hover {
+background-color: #555;
+}
+
+/* Estilos específicos para el footer */
+footer {
+font-family: 'Roboto', sans-serif;
+background-color: #1f5a94;
+color: #f1f1f1;
+padding-top: 40px;
+padding-right: 60px;
+}
+
+.quicklink{
+color: #f1f1f1
+}
+
+@media (max-width: 767.98px) {
+.container-footer {
+    max-width: 100%;
+}
+
+.col-md-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+}
+/* Ajuste para Samsung Galaxy S8 */
+@media (max-width: 360px) {
+footer h5 {
+    font-size: 1rem;
+}
+
+footer p {
+    font-size: 0.8rem;
+}
+
+footer .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+}
+
+footer img {
+    width: 80px;
+}
+}
+
+.social-icons {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 20px; /* Espacio entre íconos y texto de derechos reservados */
+}
+
+.social-icons a {
+margin: 0 10px; /* Espacio entre íconos */
+text-decoration: none;
+color: #fff;
+font-size: 2em;
+transition: color 0.3s;
+}
+
+.social-icons a:hover {
+color: #050801;
+}
+
+/* Texto de derechos reservados */
+.copyright {
+text-align: center;
+margin-top: 20px; /* Espacio entre íconos y texto de derechos reservados */
+color: #777; /* Color de texto gris */
+}

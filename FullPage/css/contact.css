@@ -1,0 +1,327 @@
+/* Header Styles */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.548);
+  }
+  
+  .logo-text {
+    background: 50% 100%/50% 50% no-repeat radial-gradient(ellipse at bottom, #0056b3, transparent, transparent);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 2rem; /* Ajusta el tamaño según tus necesidades */
+    font-weight: bold;
+    animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
+  }
+  
+  .logo-text span {
+    color: #00BFFF;
+  }
+  
+  @keyframes reveal {
+    80% {
+        letter-spacing: 4px;
+    }
+    100% {
+        background-size: 300% 300%;
+    }
+  }
+  
+  @keyframes glow {
+    40% {
+        text-shadow: 0 0 8px #00BFFF;
+    }
+  }
+  
+  /* Navbar Styles */
+  .navbar-nav .nav-link {
+    color: #333641;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #00BFFF;
+  }
+  
+  .dropdown-menu {
+    background-color: #00BFFF;
+  }
+  
+  .dropdown-menu a {
+    color: #fff;
+  }
+  
+  /* Mobile Responsive */
+  @media only screen and (max-width: 576px) {
+    .navbar-nav {
+        background-color: #00BFFF;
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        left: 0;
+        z-index: 1;
+        display: none;
+    }
+  
+    .navbar-nav .nav-item {
+        border-bottom: 1px solid #fff;
+    }
+  
+    .navbar-nav .dropdown-menu {
+        background-color: #00BFFF;
+    }
+  
+    .navbar-toggler {
+        display: block;
+    }
+  }
+  
+  .logo-container {
+    height: 100%;
+    overflow: hidden;
+    background-color: #ffffff; /* Fondo blanco para el logo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1; /* Para que ocupe el espacio restante */
+  }
+  
+  .logo-img {
+    max-width: 100px; /* Tamaño máximo para el logo */
+    height: auto; /* Altura automática para mantener la proporción */
+  }
+  
+  .video-section1 {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      height: 68vh; /* Ajusta este valor según tus necesidades */
+  }
+  
+  .video-container1 {
+    position: relative;
+    width: 100%;
+    padding-bottom: 40%; /* Proporción ajustada para reducir la altura */
+    background-color: #ffffff;
+  }
+  
+  .video-container1 video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+  
+  .video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+  }
+  
+  .video-content1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 3;
+  }
+  
+  .video-content1 h2 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .video-content1 p {
+    color: #ffffff;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .video-content1 .btn {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.5s;
+  }
+  
+  .video-content1 .btn:hover {
+    background-color: #00BFFF;
+  }
+
+  #map {
+    height: 400px; /* Altura del mapa */
+    width: 100%; /* Ancho del mapa */
+}
+
+  .contact-section-form {
+    padding-top: 20px;
+    background-color: #00BFFF;
+    background-image: url('ruta/de/la/imagen.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Para que la imagen de fondo cubra toda la sección */
+    background-position: center; /* Para centrar la imagen de fondo */
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .contact-container-form {
+    width: 80%; /* Ancho del contenedor */
+    margin: 0 auto; /* Para centrar el contenedor */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contact-info-form {
+    flex: 1; /* Ocupa la mitad del contenedor */
+    color: white; /* Color del texto */
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  
+  .contact-info-form h3 {
+    margin-bottom: 20px;
+  }
+  
+  .contact-form1 {
+    flex: 1; /* Ocupa la mitad del contenedor */
+    padding: 0 20px; /* Espacio alrededor del formulario */
+  }
+  
+  .contact-form1 input[type="text"],
+  .contact-form1 input[type="email"],
+  .contact-form1 textarea {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 20px; /* Espaciado inferior */
+  }
+  
+  .contact-form1 textarea {
+    height: 150px; /* Altura del área de texto */
+  }
+  
+  .contact-form1 input[type="submit"] {
+    background-color: #00BFFF; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    cursor: pointer; /* Cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+  }
+  
+  .contact-form1 input[type="submit"]:hover {
+    background-color: #0073e6; /* Color de fondo al pasar el mouse */
+  }
+
+  .scroll-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #00BFFF;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 9999;
+    display: none; /* inicialmente oculto */
+  }
+  
+  .scroll-top-btn:hover {
+    background-color: #555;
+  }
+  
+  
+  
+  /* Estilos específicos para el footer */
+  footer {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1f5a94;
+    color: #f1f1f1;
+    padding-top: 40px;
+    padding-right: 60px;
+  }
+  
+  .quicklink{
+    color: #f1f1f1
+  }
+  
+  
+  
+  @media (max-width: 767.98px) {
+    .container-footer {
+        max-width: 100%;
+    }
+    
+    .col-md-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+  }
+  
+  /* Ajuste para Samsung Galaxy S8 */
+  @media (max-width: 360px) {
+    footer h5 {
+        font-size: 1rem;
+    }
+    
+    footer p {
+        font-size: 0.8rem;
+    }
+    
+    footer .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+    
+    footer img {
+        width: 80px;
+    }
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Espacio entre íconos y texto de derechos reservados */
+  }
+  
+  .social-icons a {
+    margin: 0 10px; /* Espacio entre íconos */
+    text-decoration: none;
+    color: #fff;
+    font-size: 2em;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #050801;
+  }
+  
+  /* Texto de derechos reservados */
+  .copyright {
+    text-align: center;
+    margin-top: 20px; /* Espacio entre íconos y texto de derechos reservados */
+    color: #777; /* Color de texto gris */
+  }
+  

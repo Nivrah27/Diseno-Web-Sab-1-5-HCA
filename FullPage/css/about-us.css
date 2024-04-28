@@ -1,0 +1,385 @@
+/* Header Styles */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.548);
+  }
+  
+  .logo-text {
+    background: 50% 100%/50% 50% no-repeat radial-gradient(ellipse at bottom, #0056b3, transparent, transparent);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 2rem; /* Ajusta el tamaño según tus necesidades */
+    font-weight: bold;
+    animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
+  }
+  
+  .logo-text span {
+    color: #00BFFF;
+  }
+  
+  @keyframes reveal {
+    80% {
+        letter-spacing: 4px;
+    }
+    100% {
+        background-size: 300% 300%;
+    }
+  }
+  
+  @keyframes glow {
+    40% {
+        text-shadow: 0 0 8px #00BFFF;
+    }
+  }
+  
+  /* Navbar Styles */
+  .navbar-nav .nav-link {
+    color: #333641;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #00BFFF;
+  }
+  
+  .dropdown-menu {
+    background-color: #00BFFF;
+  }
+  
+  .dropdown-menu a {
+    color: #fff;
+  }
+  
+  /* Mobile Responsive */
+  @media only screen and (max-width: 576px) {
+    .navbar-nav {
+        background-color: #00BFFF;
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        left: 0;
+        z-index: 1;
+        display: none;
+    }
+  
+    .navbar-nav .nav-item {
+        border-bottom: 1px solid #fff;
+    }
+  
+    .navbar-nav .dropdown-menu {
+        background-color: #00BFFF;
+    }
+  
+    .navbar-toggler {
+        display: block;
+    }
+  }
+  
+  .logo-container {
+    height: 100%;
+    overflow: hidden;
+    background-color: #ffffff; /* Fondo blanco para el logo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1; /* Para que ocupe el espacio restante */
+  }
+  
+  .logo-img {
+    max-width: 100px; /* Tamaño máximo para el logo */
+    height: auto; /* Altura automática para mantener la proporción */
+  }
+
+
+  body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Sección 1: Historia de la empresa */
+.history-section {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 40px;
+    border-radius: 15%;
+}
+
+.text-container {
+    width: 60%;
+    text-align: justify;
+    justify-content: center;
+    margin-right: 40px;
+}
+
+@media (max-width: 360px) {
+    .history-section {
+        padding: 30px 2%; /* Ajustes en el padding para pantallas pequeñas */
+    }
+
+    .flex-container {
+        flex-direction: column; /* Cambiar a disposición vertical */
+        align-items: center;
+    }
+
+    .image-container img,
+    .text-container {
+        width: 100%; /* Ajustar el ancho al 100% para pantallas pequeñas */
+        margin-left: 0; /* Eliminar el margen izquierdo */
+        margin-right: 0; /* Eliminar el margen derecho */
+    }
+
+    .image-container img {
+        margin-bottom: 20px; /* Espacio entre la imagen y el texto */
+    }
+}
+
+/* Sección 2: Misión, Visión, Valores */
+.mission-section {
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas si es necesario */
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.card {
+    border: 1px solid #194bd4;
+    flex: 1; /* Establece que cada tarjeta tome el mismo espacio */
+    margin: 10px; /* Espacio entre las tarjetas */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho y alto total */
+}
+
+.card h3 {
+    color: #00BFFF;
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.card p {
+    margin-bottom: 0; /* Elimina el margen inferior para evitar espacio adicional */
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 360px) {
+    .mission-section {
+        margin: 2%;
+        padding: 30px 0;
+    }
+
+    .card {
+        flex: 1 0 90%; /* Ajusta la tarjeta para que ocupe el 100% del ancho */
+        margin: 5px 0; /* Espacio entre las tarjetas */
+    }
+}
+
+/* Sección 3: Equipo */
+.team-section {
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.team-member {
+    width: 25%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.team-member p {
+    font-size: 14px; /* Reducir el tamaño del texto del párrafo */
+    margin-bottom: 15px; /* Aumentar el espacio entre cada miembro */
+}
+
+.team-member h4 {
+    color: #00BFFF; /* Cambiar el color a naranja */
+}
+
+.team-member img {
+    width: 30%;
+    height: 40%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+@media(max-width: 360px) {
+    .team-member {
+        width: 30%; /* Ajustar el ancho para pantallas más pequeñas */
+    }
+
+    .team-member img {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .team-member {
+        width: 100%; /* Ajustar el ancho para dispositivos móviles */
+    }
+
+    .team-member img {
+        width: 70%;
+    }
+}
+
+
+/* Sección 4: Galería */
+.gallery-section {
+    padding: 50px 0;
+}
+
+.gallery-images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.gallery-img {
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Modal */
+.gallery-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    overflow: auto;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 40px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.scroll-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #00BFFF;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 9999;
+    display: none; /* inicialmente oculto */
+  }
+  
+  .scroll-top-btn:hover {
+    background-color: #555;
+  }
+
+
+  /* Estilos específicos para el footer */
+footer {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1f5a94;
+    color: #f1f1f1;
+    padding-top: 40px;
+    padding-right: 60px;
+  }
+  
+  .quicklink{
+    color: #f1f1f1
+  }
+  
+  
+  
+  @media (max-width: 767.98px) {
+    .container-footer {
+        max-width: 100%;
+    }
+    
+    .col-md-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+  }
+  
+  /* Ajuste para Samsung Galaxy S8 */
+  @media (max-width: 360px) {
+    footer h5 {
+        font-size: 1rem;
+    }
+    
+    footer p {
+        font-size: 0.8rem;
+    }
+    
+    footer .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+    
+    footer img {
+        width: 80px;
+    }
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Espacio entre íconos y texto de derechos reservados */
+  }
+  
+  .social-icons a {
+    margin: 0 10px; /* Espacio entre íconos */
+    text-decoration: none;
+    color: #fff;
+    font-size: 2em;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #050801;
+  }
+  
+  /* Texto de derechos reservados */
+  .copyright {
+    text-align: center;
+    margin-top: 20px; /* Espacio entre íconos y texto de derechos reservados */
+    color: #777; /* Color de texto gris */
+  }

@@ -1,0 +1,222 @@
+/* Ajuste para Samsung Galaxy S8 */
+@media (max-width: 360px) {
+
+    /* General Styles */
+    body {
+      font-size: 14px;
+    }
+  
+    /* Header Styles */
+    .header {
+      padding: 8px 16px;
+    }
+  
+    .logo-text {
+      font-size: 1.5rem;
+    }
+  
+    .navbar-nav .nav-link {
+      font-size: 14px;
+    }
+  
+    .dropdown-menu a {
+      font-size: 14px;
+    }
+  
+    /* Video Section */
+    .video-section1 {
+      height: 40vh;
+    }
+
+    .video-container1{
+        height: 30vh;
+    }
+  
+    .video-content1 h2 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+  
+    .video-content1 p {
+      font-size: 5px;
+    }
+  
+    .video-content1 .btn {
+      font-size: 0.9rem;
+      padding: 0.5rem 1rem;
+    }
+
+
+  
+    /* Mission Section */
+    .mission-section {
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+
+    .mission-section img {
+      width: 100%;
+      height: 50%;
+    }
+  
+    .mission-section .card {
+      height: 50%;
+      margin: 20px 0;
+    }
+  
+    .card-inner h1 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+  
+    .card-inner p {
+      font-size: 0.9rem;
+    }
+  
+    /* Parallax Section */
+    .parallax-content {
+        text-align: center;
+        padding: 20px;
+      }
+    
+      .parallax-content h2 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+      }
+    
+      .parallax-content p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
+    
+      .parallax-bg {
+        background-size: 360px auto; 
+      }
+    
+    /* About Section */
+    .about-content h2 {
+      font-size: 2rem;
+      max-width: 90%;
+      margin-bottom: 0.5rem;
+    }
+  
+    .about-content p {
+      font-size: 0.9rem;
+      max-width: 80%;
+      margin-bottom: 1rem;
+    }
+  
+    /* Warehouse Video Section */
+    .warehouse-video-wrapper {
+      width: 95%;
+      padding-bottom: 40%;
+    }
+  
+    /* Footer */
+    footer {
+      padding: 30px 16px;
+    }
+  
+    footer h5 {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+  
+    footer p {
+      font-size: 0.8rem;
+      margin-bottom: 1rem;
+    }
+  
+    footer .btn {
+      padding: 0.5rem 1rem;
+      font-size: 0.8rem;
+    }
+  
+    footer img {
+      width: 80px;
+      margin-bottom: 1rem;
+    }
+  
+    /* Social Icons */
+    .social-icons {
+      margin-top: 15px;
+    }
+  
+    .social-icons a {
+      margin: 0 8px;
+      font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 360px) {
+
+    /* Service Boxes */
+    .service-boxes {
+      flex-direction: column; 
+      align-items: center; 
+      gap: 20px; 
+    }
+  
+    .service-box {
+      width: 100%; 
+      margin-bottom: 20px; 
+    }
+  
+    .service-box a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .service-box img {
+      max-width: 80%; 
+      height: auto; 
+      margin-bottom: 10px; 
+    }
+  
+    .service-box h3 {
+      font-size: 1rem; 
+      margin: 0; 
+    }
+}
+
+@media (max-width: 360px) {
+
+    /* Team Members */
+    .team-members {
+      flex-direction: column;
+      align-items: center; 
+      gap: 20px; 
+    }
+  
+    .team-member {
+      width: 100%; 
+      text-align: center; 
+      margin-bottom: 20px; 
+    }
+  
+    .team-member-img {
+      width: 80%; 
+      height: auto; 
+      border-radius: 50%; 
+      margin-bottom: 10px; 
+    }
+  
+    .team-member-name {
+      font-size: 1rem; 
+      margin: 0; 
+    }
+  
+    .team-member-role {
+      font-size: 0.9rem; 
+      margin: 0;
+      color: #888; 
+    }
+}
+
+
+  

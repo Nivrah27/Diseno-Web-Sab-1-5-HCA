@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>We Services</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="icon" type="image/png" href="imagenes/0440_We_Services_RB-01.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" >
+        <link rel="stylesheet" href="css/services.css">
+        
+        
+</head>
+
+<body>
+    
+
+    <header class="header" id="header">
+        <div class="logo-container">
+            <h1 class="logo-text">We, <span>Services!</span></h1>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-2">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-us.html">Quienes somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Misión</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Servicios
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="services.html">Aire Acondicionado</a></li>
+                                <li><a class="dropdown-item" href="services.html">Refrigeración</a></li>
+                                <li><a class="dropdown-item" href="services.html">Servicios Eléctricos</a></li>
+                                <li><a class="dropdown-item" href="services.html">Gas LP</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="instalaciones.html">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-us.html">Equipo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html" target="_blank">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="logo-container">
+            <img src="imagenes/0440_We_Services_RB-01.png" alt="Logo We Services" class="logo-img">
+        </div>
+    </header>
+
+    <section class="hero-section" id="hero-section">
+        <div class="video-container">
+            <iframe src="https://player.vimeo.com/video/888806114?autoplay=1&loop=1&autopause=0&background=1&muted=1"
+                    frameborder="0"
+                    allowfullscreen>
+            </iframe>
+        </div>
+        <div class="service-boxes">
+            <div class="service-box">
+                <a href="#services-display">
+                    <img src="imagenes/aire-acondicionado.png" alt="Aire Acondicionado">
+                    <h3>Aire Acondicionado</h3>
+                </a>
+            </div>
+            <div class="service-box">
+                <a href="#services-display">
+                    <img src="imagenes/copo-de-nieve.png" alt="Refrigeración">
+                    <h3>Refrigeración</h3>
+                </a>
+            </div>
+            <div class="service-box">
+                <a href="#services-display">
+                    <img src="imagenes/servicio-electrico.png" alt="Servicios Eléctricos">
+                    <h3>Servicios Eléctricos</h3>
+                </a>
+            </div>
+            <div class="service-box">
+                <a href="#services-display">
+                    <img src="imagenes/gas.png" alt="Gas LP">
+                    <h3>Gas LP</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <hr class="rounded">
+
+    <section class="servicesdescription">
+        <div class="servicebox" id="service1">
+            <div class="image-container-sb">
+                <img src="https://lirp.cdn-website.com/60bc8bc9/dms3rep/multi/opt/most+expensive+part+of+an+hvac+system+-+Tom-s+Mechanical-1920w.jpeg" alt="Servicio 1">
+            </div>
+            <div class="text-container-servicebox">
+                <h2>Servicios de Aire Acondicionado</h2>
+                <p>¡Déjanos llevar el frescor y el confort a tu espacio! En We, Services! nos enorgullece ofrecerte soluciones completas para tus necesidades de aire acondicionado. Desde el diseño inicial hasta la instalación y el mantenimiento, nuestro equipo altamente capacitado se encarga de cada detalle para garantizar un ambiente perfectamente climatizado, sin importar si es un hogar acogedor o un proyecto de gran envergadura. Nos especializamos en la hotelería, donde la comodidad es clave, asegurando que cada huésped se sienta como en casa. Además, nuestros servicios incluyen un análisis exhaustivo de costos para que puedas disfrutar del frescor sin preocupaciones financieras. ¿Listo para transformar tu espacio en un oasis de frescura y bienestar? 
+                <br><br>    
+                ¡Contáctanos ahora y deja que el aire acondicionado de calidad premium de We, Services, hable por sí mismo!</p>
+                <br><br>
+                <a href="https://wa.link/cwvomy" target="_blank" class="btn btn-request">
+                    <i class="bi bi-whatsapp"></i>Solicitar Servicio
+                </a>
+            </div>
+        </div>
+        <div class="servicebox" id="service2">
+            <div class="image-container-sb">
+                <img src="https://www.perthairandpowersolutions.com.au/wp-content/uploads/2023/09/Industrial-Refrigeration-1024x683.jpg" alt="Servicio 2">
+            </div>
+            <div class="text-container-servicebox">
+                <h2>Servicios de Refrigeración</h2>
+                <p>¿Buscas mantener tus productos frescos y tus clientes satisfechos? En We, Services! entendemos la importancia de la refrigeración comercial para tu negocio. Desde la apertura de supermercados hasta la gestión de proyectos de refrigeración en toda la región, nuestro equipo experimentado está aquí para brindarte soluciones confiables y eficientes. Nos destacamos en la instalación y el mantenimiento de sistemas de refrigeración de última generación, garantizando la calidad y la seguridad de tus productos. Con un enfoque en la excelencia y la atención al detalle, nos aseguramos de que tu negocio esté siempre un paso adelante en términos de frescura y calidad. ¿Listo para llevar tu negocio al siguiente nivel? 
+                <br><br>
+                ¡Haz clic en el botón de abajo para solicitar nuestros servicios de refrigeración hoy mismo!</p>
+                <br><br>
+                <a href="https://wa.link/cwvomy" target="_blank" class="btn-request">Solicitar Servicio</a>
+            </div>
+        </div>
+
+        <div class="servicebox" id="service3">
+            <div class="image-container-sb">
+                <img src="https://www.coynecollege.edu/wp-content/uploads/2020/04/how-to-deal-with-unsafe-wiring-coynecollege-scaled.jpeg" alt="Servicio 2">
+            </div>
+            <div class="text-container-servicebox">
+                <h2>Servicios de Instalaciones Eléctricas</h2>
+                <p>En We, Services! iluminamos tu camino hacia el éxito con nuestros servicios de electricidad de primer nivel. Desde proyectos residenciales hasta instalaciones a gran escala en la hotelería y las cadenas de supermercados, nuestro equipo de expertos se encarga de cada aspecto de tu sistema eléctrico con precisión y profesionalismo. Nos enorgullecemos de ofrecer soluciones innovadoras y eficientes que garantizan un suministro eléctrico confiable en todo momento. Con un enfoque en la seguridad y la eficiencia energética, te aseguramos que tus instalaciones estarán en buenas manos. ¿Estás listo para encender la chispa del éxito en tu proyecto?
+                <br><br>    
+                ¡Haz clic a continuación para solicitar nuestros servicios de electricidad ahora mismo!</p>
+                <br><br>
+                <a href="https://wa.link/cwvomy" target="_blank" class="btn-request">Solicitar Servicio</a>
+            </div>
+        </div>
+        <div class="servicebox" id="service2">
+            <div class="image-container-sb">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2022/3/LN/DO/QL/144283038/vot-vapor-off-take-gas-pipeline-system-supply-and-installation.jpg" alt="Servicio 2">
+            </div>
+            <div class="text-container-servicebox">
+                <h2>Servicios de Instalaciones de Gas LP</h2>
+                <p>En We, Services, te brindamos la energía que necesitas para impulsar tu negocio hacia nuevos horizontes con nuestros servicios de Gas LP. Con una amplia experiencia en la industria alimentaria, restaurantes y más, estamos aquí para ofrecerte soluciones seguras y confiables para todas tus necesidades de gas. Nos especializamos en la instalación, mantenimiento y gestión de sistemas de Gas LP, asegurando un suministro constante y eficiente en todo momento. Nuestro equipo altamente calificado se encarga de cada detalle, brindándote la tranquilidad y la seguridad que necesitas para enfocarte en lo que más importa: hacer crecer tu negocio. ¿Listo para dar el siguiente paso hacia un rendimiento óptimo? 
+                <br><br>    
+                ¡Haz clic en el botón de abajo para solicitar nuestros servicios de Gas LP hoy mismo!</p>
+                <br><br>
+                <a href="https://wa.link/cwvomy" target="_blank" class="btn-request">Solicitar Servicio</a>
+            </div>              
+    </section>
+
+    <hr class="rounded">
+
+    <section id="precios" class="precios">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Precios de Servicios</h2>
+            <p>Descubre nuestros servicios y precios competitivos</p>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <div class="table-responsive">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr style="background-color: #f8f9fa;">
+                      <th>Servicio</th>
+                      <th>Descripción</th>
+                      <th>Precio (USD)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td rowspan="3">Aire Acondicionado</td>
+                      <td>Instalación residencial básica</td>
+                      <td>$500</td>
+                    </tr>
+                    <tr>
+                      <td>Instalación para proyectos de gran escala</td>
+                      <td>$2000 - $5000</td>
+                    </tr>
+                    <tr>
+                      <td>Mantenimiento anual</td>
+                      <td>$200</td>
+                    </tr>
+                    <tr>
+                      <td rowspan="3">Refrigeración</td>
+                      <td>Instalación para pequeños comercios</td>
+                      <td>$800</td>
+                    </tr>
+                    <tr>
+                      <td>Instalación para supermercados</td>
+                      <td>$3000 - $10000</td>
+                    </tr>
+                    <tr>
+                      <td>Mantenimiento preventivo</td>
+                      <td>$300</td>
+                    </tr>
+                    <tr>
+                      <td rowspan="3">Electricidad</td>
+                      <td>Instalación eléctrica residencial básica</td>
+                      <td>$400</td>
+                    </tr>
+                    <tr>
+                      <td>Instalación para hoteles y cadenas de supermercados</td>
+                      <td>$1500 - $3000</td>
+                    </tr>
+                    <tr>
+                      <td>Reparación de fallas eléctricas</td>
+                      <td>$100 por hora</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <footer class="footer" id="footer">
+        <div class="container-footer">
+            <!-- Logo y Información de contacto -->
+            <div class="row mb-4 align-items-center">
+                <div class="col-md-3 text-center mb-3 mb-md-0">
+                    <img src="imagenes/0440_We_Services_RB-01.png" alt="Logo" width="100">
+                </div>
+                <div class="col-md-3">
+                    <h5>Contacto</h5>
+                    <p>Dirección: San José, Costa Rica</p>
+                    <p>Teléfono: +506 8973-6046</p>
+                    <p>Correo: refricasa@gmail.com</p>
+                    <p>Sitio Web: www.weservicescr.com</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a class="quicklink" href="index.html">Inicio</a></li>
+                        <li><a class="quicklink" href="about-us.html">Quiénes Somos</a></li>
+                        <li><a class="quicklink" href="index.html">Misión</a></li>
+                        <li><a class="quicklink" href="services.html">Servicios</a></li>
+                        <li><a class="quicklink" href="instalaciones.html">Proyectos</a></li>
+                        <li><a class="quicklink" href="about-us.html">Equipo</a></li>
+                        <li><a class="quicklink" href="contact.html">Contacto</a></li>
+                        <li><a class="quicklink" href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Suscribirse</h5>
+                    <form>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Correo electrónico">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Suscribirse</button>
+                    </form>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/" style="--color: #4267B2"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/" style="--color: #E1306C"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/" style="--color: #FF0000"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/" style="--color: #0077B5"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>&copy; 2024 We Services. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollToTopBtn" class="scroll-top-btn">&#8593;</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="js/services.js"></script>
+
+</body>
+
+</html>
